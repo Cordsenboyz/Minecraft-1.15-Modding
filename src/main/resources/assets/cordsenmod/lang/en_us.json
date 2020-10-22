@@ -147,5 +147,9 @@
   "item.cordsenmod.ring_of_luck": "Ring of Luck",
   "item.cordsenmod.ring_of_strength": "Ring of Strength",
   "item.cordsenmod.ring_of_resistance": "Ring of Resistance",
-  "item.cordsenmod.ring_of_regeneration": "Ring of Regeneration"
+  "item.cordsenmod.ring_of_regeneration": "Ring of Regeneration",
+  "enchantment.cordsenmod.advanced_protection": "Advanced Protection",
+  "enchantment.cordsenmod.advanced_blast_protection": "Advanced Blast Protection",
+  "enchantment.cordsenmod.advanced_fire_protection": "Advanced Fire Protection",
+  "enchantment.cordsenmod.reinforced": "Reinforced"
 }
