@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " xd",
+    "s d",
+    " xd"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:netherite_ingot"
+    },
+    "d": {
+      "item": "cordsenmod:double_string"
+    },
+    "s": {
+      "item": "cordsenmod:handle"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:netherite_bow",
+    "count": 1
+  }
+}

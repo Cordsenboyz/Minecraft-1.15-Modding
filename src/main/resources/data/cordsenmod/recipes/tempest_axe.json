@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    "xd ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:tempest_ingot"
+    },
+    "d": {
+      "item": "cordsenmod:handle"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:tempest_axe",
+    "count": 1
+  }
+}

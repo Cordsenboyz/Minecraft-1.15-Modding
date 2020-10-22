@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:sapphire_ore"
+  },
+  "result": "cordsenmod:sapphire",
+  "experience": 1.0,
+  "cookingtime": 100
+}

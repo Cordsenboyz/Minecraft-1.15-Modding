@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "x x",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:ruby"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:ruby_boots",
+    "count": 1
+  }
+}

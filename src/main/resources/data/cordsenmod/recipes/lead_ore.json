@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:lead_ore_item"
+  },
+  "result": "cordsenmod:lead_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    "xd ",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:copper_dust"
+    },
+    "d": {
+      "item": "cordsenmod:tin_dust"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:bronze_dust",
+    "count": 3
+  }
+}

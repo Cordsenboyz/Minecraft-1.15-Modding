@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:silver_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:silver_block",
+    "count": 1
+  }
+}

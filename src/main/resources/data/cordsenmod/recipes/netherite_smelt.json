@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:netherite_ore_item"
+  },
+  "result": "cordsenmod:netherite_ingot",
+  "experience": 5.0,
+  "cookingtime": 300
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "cordsenmod:oldwood_log",
+    "cordsenmod:maplewood_log",
+    "cordsenmod:locustwood_log"
+  ]
+}

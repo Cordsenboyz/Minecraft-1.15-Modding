@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:tempest_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:tempest_helmet",
+    "count": 1
+  }
+}

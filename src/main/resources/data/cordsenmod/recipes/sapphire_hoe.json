@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    " d ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:sapphire"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:sapphire_hoe",
+    "count": 1
+  }
+}

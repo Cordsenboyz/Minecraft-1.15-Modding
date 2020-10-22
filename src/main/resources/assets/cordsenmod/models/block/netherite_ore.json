@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cordsenmod:blocks/netherite_ore_top",
+    "side": "cordsenmod:blocks/netherite_ore_side"
+  }
+}

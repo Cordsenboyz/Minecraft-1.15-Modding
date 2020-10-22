@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:locustwood_log"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:locustwood_planks",
+    "count": 4
+  }
+}

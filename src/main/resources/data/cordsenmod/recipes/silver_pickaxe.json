@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " d ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:silver_ingot"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:silver_pickaxe",
+    "count": 1
+  }
+}

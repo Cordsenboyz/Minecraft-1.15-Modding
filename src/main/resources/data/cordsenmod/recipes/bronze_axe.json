@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    "xd ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:bronze_ingot"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:bronze_axe",
+    "count": 1
+  }
+}

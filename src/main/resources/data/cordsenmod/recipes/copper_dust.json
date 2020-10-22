@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:copper_ingot"
+    },
+    {
+      "item": "cordsenmod:copper_pickaxe"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:copper_dust",
+    "count": 1
+  }
+}

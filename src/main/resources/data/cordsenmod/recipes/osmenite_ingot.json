@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:osmenite_block"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:osmenite_ingot",
+    "count": 9
+  }
+}

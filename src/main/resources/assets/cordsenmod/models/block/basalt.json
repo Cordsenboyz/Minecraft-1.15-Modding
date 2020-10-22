@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "cordsenmod:blocks/basalt_top",
+    "side": "cordsenmod:blocks/basalt"
+  }
+}

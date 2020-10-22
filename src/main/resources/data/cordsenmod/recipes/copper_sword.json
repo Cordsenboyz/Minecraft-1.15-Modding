@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " x ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:copper_ingot"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:copper_sword",
+    "count": 1
+  }
+}

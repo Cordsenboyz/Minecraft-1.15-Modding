@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:silver_ore_item"
+  },
+  "result": "cordsenmod:silver_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

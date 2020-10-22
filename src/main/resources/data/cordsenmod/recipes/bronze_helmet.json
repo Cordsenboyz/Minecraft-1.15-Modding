@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:bronze_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:bronze_helmet",
+    "count": 1
+  }
+}

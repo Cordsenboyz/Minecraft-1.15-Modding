@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:ruby_ore"
+  },
+  "result": "cordsenmod:ruby",
+  "experience": 1.0,
+  "cookingtime": 100
+}

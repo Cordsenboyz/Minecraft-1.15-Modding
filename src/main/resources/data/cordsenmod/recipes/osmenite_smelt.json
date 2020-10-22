@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cordsenmod:osmenite_ore_item"
+  },
+  "result": "cordsenmod:osmenite_ingot",
+  "experience": 5.0,
+  "cookingtime": 300
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "cordsenmod:oldwood_leaves",
+    "cordsenmod:maplewood_leaves",
+    "cordsenmod:locustwood_leaves"
+  ]
+}

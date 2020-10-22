@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:maplewood_log"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:maplewood_planks",
+    "count": 4
+  }
+}

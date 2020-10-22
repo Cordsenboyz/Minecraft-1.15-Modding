@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "cordsenmod:block/netherite_block" }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "cordsenmod:example",
+  "output": {
+    "item": "minecraft:nether_star"
+  },
+  "input": {
+    "item": "minecraft:gold_ore"
+  }
+}

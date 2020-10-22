@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:sapphire_block"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:sapphire",
+    "count": 9
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "cordsenmod:block/bronze_block" }
+  }
+}

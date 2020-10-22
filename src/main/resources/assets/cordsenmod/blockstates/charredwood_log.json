@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":    { "model": "cordsenmod:block/charredwood_log" },
+    "axis=z":     { "model": "cordsenmod:block/charredwood_log", "x": 90 },
+    "axis=x":     { "model": "cordsenmod:block/charredwood_log", "x": 90, "y": 90 }
+  }
+}

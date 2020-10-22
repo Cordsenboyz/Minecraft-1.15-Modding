@@ -1,0 +1,9 @@
+
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "cordsenmod:blocks/alloy_furnace_top",
+    "front": "cordsenmod:blocks/lit_alloy_furnace_front",
+    "side": "cordsenmod:blocks/alloy_furnace_side"
+  }
+}

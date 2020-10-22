@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:tin_block"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:tin_ingot",
+    "count": 9
+  }
+}

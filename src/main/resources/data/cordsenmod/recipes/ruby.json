@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cordsenmod:ruby_block"
+    }
+  ],
+  "result":
+  {
+    "item": "cordsenmod:ruby",
+    "count": 9
+  }
+}
