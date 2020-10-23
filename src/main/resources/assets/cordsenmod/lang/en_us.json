@@ -150,6 +150,10 @@
   "item.cordsenmod.ring_of_regeneration": "Ring of Regeneration",
   "enchantment.cordsenmod.advanced_protection": "Advanced Protection",
   "enchantment.cordsenmod.advanced_blast_protection": "Advanced Blast Protection",
-  "enchantment.cordsenmod.advanced_fire_protection": "Advanced Fire Protection",
-  "enchantment.cordsenmod.reinforced": "Reinforced"
+  "enchantment.cordsenmod.advanced_fire_protection": "Advanced< Fire Protection",
+  "enchantment.cordsenmod.reinforced": "Reinforced",
+  "enchantment.cordsenmod.advanced_sharpness": "Advanced Sharpness",
+  "enchantment.cordsenmod.advanced_smite": "Advanced Smite",
+  "enchantment.cordsenmod.advanced_baneofarthropods": "Advanced Bane of Arthropods",
+  "enchantment.cordsenmod.advanced_featherfalling": "Advanced Feather Falling"
 }

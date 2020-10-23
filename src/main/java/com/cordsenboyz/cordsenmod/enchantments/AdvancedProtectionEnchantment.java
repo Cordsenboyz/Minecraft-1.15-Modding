@@ -21,9 +21,7 @@ public class AdvancedProtectionEnchantment extends Enchantment {
         }
 
     }
-    /**
-     * Returns the minimal value of enchantability needed on the enchantment level passed.
-     */
+
     public int getMinEnchantability(int enchantmentLevel) {
         return this.protectionType.getMinimalEnchantability() + (enchantmentLevel - 1) * this.protectionType.getEnchantIncreasePerLevel();
     }
@@ -32,16 +30,10 @@ public class AdvancedProtectionEnchantment extends Enchantment {
         return this.getMinEnchantability(enchantmentLevel) + this.protectionType.getEnchantIncreasePerLevel();
     }
 
-    /**
-     * Returns the maximum level that the enchantment can have.
-     */
     public int getMaxLevel() {
         return 4;
     }
 
-    /**
-     * Calculates the damage protection of the enchantment based on level and damage source passed.
-     */
     public int calcModifierDamage(int level, DamageSource source) {
         if (source.canHarmInCreative()) {
             return 0;
@@ -58,9 +50,6 @@ public class AdvancedProtectionEnchantment extends Enchantment {
         }
     }
 
-    /**
-     * Determines if the enchantment passed can be applyied together with this enchantment.
-     */
     public boolean canApplyTogether(Enchantment ench) {
         if (ench instanceof AdvancedProtectionEnchantment) {
             AdvancedProtectionEnchantment protectionenchantment = (AdvancedProtectionEnchantment)ench;
@@ -74,9 +63,6 @@ public class AdvancedProtectionEnchantment extends Enchantment {
         }
     }
 
-    /**
-     * Gets the amount of ticks an entity should be set fire, adjusted for fire protection.
-     */
     public static int getFireTimeForEntity(LivingEntity p_92093_0_, int p_92093_1_) {
         int i = EnchantmentHelper.getMaxEnchantmentLevel(EnchantmentInit.ADVANCED_FIRE_PROTECTION.get(), p_92093_0_);
         if (i > 0) {
