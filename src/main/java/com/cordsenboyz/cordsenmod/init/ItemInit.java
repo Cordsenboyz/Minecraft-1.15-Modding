@@ -4,11 +4,9 @@ import com.cordsenboyz.cordsenmod.CordsenMod;
 import com.cordsenboyz.cordsenmod.objects.items.*;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
-import net.minecraftforge.event.entity.ProjectileImpactEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.lwjgl.system.CallbackI;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, CordsenMod.MOD_ID);
@@ -118,55 +116,58 @@ public class ItemInit {
             new HoeItem(ModItemTier.SILVER, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<SwordItem> OSMENITE_SWORD = ITEMS.register("osmenite_sword", () ->
-            new SwordItem(ModItemTier.OSMENITE, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteSwordItem(ModItemTier.OSMENITE, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<PickaxeItem> OSMENITE_PICKAXE = ITEMS.register("osmenite_pickaxe", () ->
-            new PickaxeItem(ModItemTier.OSMENITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmenitePickaxeItem(ModItemTier.OSMENITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<AxeItem> OSMENITE_AXE = ITEMS.register("osmenite_axe", () ->
-            new AxeItem(ModItemTier.OSMENITE, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteAxeItem(ModItemTier.OSMENITE, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<ShovelItem> OSMENITE_SHOVEL = ITEMS.register("osmenite_shovel", () ->
-            new ShovelItem(ModItemTier.OSMENITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteShovelItem(ModItemTier.OSMENITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<HoeItem> OSMENITE_HOE = ITEMS.register("osmenite_hoe", () ->
-            new HoeItem(ModItemTier.OSMENITE, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteHoeItem(ModItemTier.OSMENITE, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<SwordItem> NETHERITE_SWORD = ITEMS.register("netherite_sword", () ->
-            new SwordItem(ModItemTier.NETHERITE, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteSwordItem(ModItemTier.NETHERITE, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<PickaxeItem> NETHERITE_PICKAXE = ITEMS.register("netherite_pickaxe", () ->
-            new PickaxeItem(ModItemTier.NETHERITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheritePickaxeItem(ModItemTier.NETHERITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<AxeItem> NETHERITE_AXE = ITEMS.register("netherite_axe", () ->
-            new AxeItem(ModItemTier.NETHERITE, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteAxeItem(ModItemTier.NETHERITE, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<ShovelItem> NETHERITE_SHOVEL = ITEMS.register("netherite_shovel", () ->
-            new ShovelItem(ModItemTier.NETHERITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteShovelItem(ModItemTier.NETHERITE, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<HoeItem> NETHERITE_HOE = ITEMS.register("netherite_hoe", () ->
-            new HoeItem(ModItemTier.NETHERITE, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteHoeItem(ModItemTier.NETHERITE, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<SwordItem> TEMPEST_SWORD = ITEMS.register("tempest_sword", () ->
-            new SwordItem(ModItemTier.TEMPEST, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestSwordItem(ModItemTier.TEMPEST, 6, -2.2F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<PickaxeItem> TEMPEST_PICKAXE = ITEMS.register("tempest_pickaxe", () ->
-            new PickaxeItem(ModItemTier.TEMPEST, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestPickaxeItem(ModItemTier.TEMPEST, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<AxeItem> TEMPEST_AXE = ITEMS.register("tempest_axe", () ->
-            new AxeItem(ModItemTier.TEMPEST, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestAxeItem(ModItemTier.TEMPEST, 8, -3.0F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<ShovelItem> TEMPEST_SHOVEL = ITEMS.register("tempest_shovel", () ->
-            new ShovelItem(ModItemTier.TEMPEST, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestShovelItem(ModItemTier.TEMPEST, 0, -2.8F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<HoeItem> TEMPEST_HOE = ITEMS.register("tempest_hoe", () ->
-            new HoeItem(ModItemTier.TEMPEST, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
+            new TempestHoeItem(ModItemTier.TEMPEST, -2.4F,  new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<StaffItem> STAFF_RAIN = ITEMS.register("staff_rain", () ->
             new StaffItem(ModItemTier.RUBY, 0, -2.4F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<StaffItemWind> STAFF_WIND = ITEMS.register("staff_wind", () ->
             new StaffItemWind(ModItemTier.RUBY, 0, -2.4F, new Item.Properties().group(CordsenMod.TAB)));
+
+    public static final RegistryObject<StaffItemFire> STAFF_FIRE = ITEMS.register("staff_fire", () ->
+            new StaffItemFire(ModItemTier.RUBY, 0, -2.4F, new Item.Properties().group(CordsenMod.TAB)));
 
     public static final RegistryObject<SwordItem> BRONZE_SWORD = ITEMS.register("bronze_sword", () ->
             new SwordItem(ModItemTier.BRONZE, 5, -2.4F, new Item.Properties().group(CordsenMod.TAB)));
@@ -224,28 +225,28 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () ->
             new ArmorItem(ModArmorMaterial.SAPPHIRE, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> OSMENITE_HELMET = ITEMS.register("osmenite_helmet", () ->
-            new ArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> OSMENITE_CHESTPLATE = ITEMS.register("osmenite_chestplate", () ->
-            new ArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> OSMENITE_LEGGINGS = ITEMS.register("osmenite_leggings", () ->
-            new ArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> OSMENITE_BOOTS = ITEMS.register("osmenite_boots", () ->
-            new ArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
+            new OsmeniteArmorItem(ModArmorMaterial.OSMENITE, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> NETHERITE_HELMET = ITEMS.register("netherite_helmet", () ->
-            new ArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> NETHERITE_CHESTPLATE = ITEMS.register("netherite_chestplate", () ->
-            new ArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> NETHERITE_LEGGINGS = ITEMS.register("netherite_leggings", () ->
-            new ArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> NETHERITE_BOOTS = ITEMS.register("netherite_boots", () ->
-            new ArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
+            new NetheriteArmorItem(ModArmorMaterial.NETHERITE, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> TEMPEST_HELMET = ITEMS.register("tempest_helmet", () ->
-            new ArmorItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestHelmetItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.HEAD, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> TEMPEST_CHESTPLATE = ITEMS.register("tempest_chestplate", () ->
-            new ArmorItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestChestplateItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.CHEST, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> TEMPEST_LEGGINGS = ITEMS.register("tempest_leggings", () ->
-            new ArmorItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestLeggingsItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.LEGS, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<ArmorItem> TEMPEST_BOOTS = ITEMS.register("tempest_boots", () ->
-            new ArmorItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
+            new TempestBootsItem(ModArmorMaterial.TEMPEST, EquipmentSlotType.FEET, new Item.Properties().group(CordsenMod.TAB)));
 
 }

@@ -25,5 +25,6 @@ public class EnchantmentInit {
     public static final RegistryObject<Enchantment> REINFORCED = ENCHANTMENTS.register("reinforced", () -> new ReinforcedEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentType.ARMOR, new EquipmentSlotType[]{EquipmentSlotType.FEET, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.HEAD}));
     public static final RegistryObject<Enchantment> ADVANCED_FEATHERFALLING = ENCHANTMENTS.register("advanced_featherfalling", () -> new AdvancedProtectionEnchantment(Enchantment.Rarity.VERY_RARE, AdvancedProtectionEnchantment.Type.FALL, new EquipmentSlotType[]{EquipmentSlotType.FEET}));
     public static final RegistryObject<Enchantment> WITHER = ENCHANTMENTS.register("wither", () -> new WitherEnchantment(Enchantment.Rarity.RARE, EnchantmentType.WEAPON, new EquipmentSlotType[] {EquipmentSlotType.MAINHAND}));
+    public static final RegistryObject<Enchantment> ADVANCED_PROJECTILE_PROTECTION = ENCHANTMENTS.register("advanced_projectile_protection", () -> new AdvancedProtectionEnchantment(Enchantment.Rarity.VERY_RARE, AdvancedProtectionEnchantment.Type.PROJECTILE, new EquipmentSlotType[]{EquipmentSlotType.FEET, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.HEAD}));
 
 }

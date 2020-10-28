@@ -55,7 +55,7 @@ public class StaffItemWind extends SwordItem {
     public void addInformation(ItemStack stack, World worldin, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldin, tooltip, flagIn);
         if (Screen.hasShiftDown()) {
-            tooltip.add(new TranslationTextComponent("Call Upon The Wind Too Aid You").applyTextStyle(TextFormatting.BLUE));
+            tooltip.add(new TranslationTextComponent("Call Upon The Wind Too Aid You").applyTextStyle(TextFormatting.WHITE));
         }else{
             tooltip.add(new TranslationTextComponent("Press Shift for more Information").applyTextStyle(TextFormatting.GRAY));
         }

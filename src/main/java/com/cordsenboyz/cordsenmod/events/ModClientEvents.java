@@ -59,7 +59,7 @@ public class ModClientEvents {
 
                 }
             }
-            if(player.world.getWorld().getDimension().isNether()){
+            if(player.world.getWorld().getDimension().isNether() || player.getBlockState().getBlock() == Blocks.FIRE || world.getBlockState(water) == Blocks.LAVA.getDefaultState() || player.isBurning() == true){
                 int set = 0;
 
                 if(player.inventory.armorInventory.get(3).getItem()==ItemInit.NETHERITE_HELMET.get()){
@@ -79,6 +79,9 @@ public class ModClientEvents {
                 }
                 if(set == 4){
                     player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 100, 4));
+                }
+                if(player.getHeldItemMainhand().getItem() == ItemInit.NETHERITE_SWORD.get() || player.getHeldItemOffhand().getItem() == ItemInit.NETHERITE_SWORD.get()) {
+                    player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 100, 3));
                 }
                 if(player.getHeldItemMainhand().getItem() == ItemInit.NETHERITE_PICKAXE.get() || player.getHeldItemOffhand().getItem() == ItemInit.NETHERITE_PICKAXE.get()) {
                     player.addPotionEffect(new EffectInstance(Effects.HASTE, 100, 1));
