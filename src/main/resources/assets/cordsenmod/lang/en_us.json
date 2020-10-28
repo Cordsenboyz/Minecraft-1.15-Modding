@@ -156,5 +156,9 @@
   "enchantment.cordsenmod.advanced_smite": "Advanced Smite",
   "enchantment.cordsenmod.advanced_baneofarthropods": "Advanced Bane of Arthropods",
   "enchantment.cordsenmod.advanced_featherfalling": "Advanced Feather Falling",
-  "enchantment.cordsenmod.advanced_projectile_protection": "Advanced Projectile Protection"
+  "enchantment.cordsenmod.advanced_projectile_protection": "Advanced Projectile Protection",
+  "item.cordsenmod.staff_fire": "Staff of Hellfire",
+  "enchantment.cordsenmod.wither": "Wither",
+  "enchantment.cordsenmod.envenomed": "Envenomed",
+  "enchantment.cordsenmod.armor_penetration": "Armor Penetration"
 }
