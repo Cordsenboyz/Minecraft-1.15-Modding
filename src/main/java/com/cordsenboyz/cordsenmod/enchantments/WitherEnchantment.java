@@ -41,17 +41,21 @@ public class WitherEnchantment extends Enchantment {
     public int getMinLevel() {
         return 1;
     }
+    @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return 30;
+    }
+
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10;
+    }
 
     @Override
     public boolean isAllowedOnBooks() {
         return true;
     }
 
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        Item item = stack.getItem();
-        return true;
-    }
 
 
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)

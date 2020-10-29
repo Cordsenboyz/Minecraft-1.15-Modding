@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.Mod;
 
 public class EnvenomedEnchantment extends Enchantment {
     public EnvenomedEnchantment(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
-        super(rarityIn, typeIn, slots);
+        super(rarityIn, EnchantmentType.WEAPON, slots);
     }
 
     @Override
@@ -34,15 +34,20 @@ public class EnvenomedEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return 30;
+    }
+
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10;
+    }
+    @Override
     public boolean isAllowedOnBooks() {
         return true;
     }
 
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        Item item = stack.getItem();
-        return true;
-    }
+
 
 
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)

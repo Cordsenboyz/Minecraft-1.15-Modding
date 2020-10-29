@@ -94,6 +94,19 @@ public class CordsenMod {
             return new ItemStack(ItemInit.RUBY.get());
         }
     };
+    public static final ItemGroup TAB2 = new ItemGroup("Cordsen_Tools_and_Weapons") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ItemInit.OSMENITE_SWORD.get());
+        }
+    };
+    public static final ItemGroup TAB1 = new ItemGroup("Cordsen_Armor") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ItemInit.OSMENITE_CHESTPLATE.get());
+        }
+    };
+
 
 }
 

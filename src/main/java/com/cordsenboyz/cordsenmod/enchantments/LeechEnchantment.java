@@ -30,7 +30,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 public class LeechEnchantment extends Enchantment {
-    public LeechEnchantment(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
+    public LeechEnchantment(Rarity rarityIn, EnchantmentType WEAPON, EquipmentSlotType[] slots) {
         super(rarityIn, EnchantmentType.WEAPON, slots);
     }
 
@@ -45,15 +45,20 @@ public class LeechEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return 30;
+    }
+
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10;
+    }
+
+    @Override
     public boolean isAllowedOnBooks() {
         return true;
     }
 
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        Item item = stack.getItem();
-        return true;
-    }
 
 
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)

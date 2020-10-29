@@ -22,6 +22,16 @@ public class ReinforcedEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return 30;
+    }
+
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10;
+    }
+
+    @Override
     public boolean isAllowedOnBooks() {
         return true;
     }

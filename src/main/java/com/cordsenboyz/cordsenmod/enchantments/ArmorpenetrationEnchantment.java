@@ -32,15 +32,20 @@ public class ArmorpenetrationEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return 30;
+    }
+
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10;
+    }
+
+    @Override
     public boolean isAllowedOnBooks() {
         return true;
     }
 
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        Item item = stack.getItem();
-        return true;
-    }
 
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class ArmorpenetrationOnHit {
@@ -54,10 +59,13 @@ public class ArmorpenetrationEnchantment extends Enchantment {
                 PlayerEntity attacker = (PlayerEntity) event.getSource().getTrueSource();
                 if (attacker != null) {
                     if (EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.ARMOR_PENETRATION.get(), attacker.getItemStackFromSlot(EquipmentSlotType.MAINHAND)) == 1) {
-                        if (EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.REINFORCED.get(), livingEntity.getItemStackFromSlot(EquipmentSlotType.LEGS)) == 1 && EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.REINFORCED.get(), livingEntity.getItemStackFromSlot(EquipmentSlotType.CHEST)) == 1){
+                        if (EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.REINFORCED.get(), livingEntity.getItemStackFromSlot(EquipmentSlotType.LEGS)) != 1 && EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.REINFORCED.get(), livingEntity.getItemStackFromSlot(EquipmentSlotType.CHEST)) != 1){
+                            source.setDamageBypassesArmor();
 
                         }else{
-                            source.setDamageBypassesArmor();
+                            if (!attacker.abilities.isCreativeMode) {
+                                ((PlayerEntity) event.getSource().getTrueSource()).getHeldItemMainhand().damageItem(3, attacker, PlayerEntity::respawnPlayer);
+                            }
                         }
                     }
                 }

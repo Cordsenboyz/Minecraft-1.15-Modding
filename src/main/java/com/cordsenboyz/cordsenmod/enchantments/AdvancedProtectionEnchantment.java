@@ -4,6 +4,7 @@ import com.cordsenboyz.cordsenmod.init.EnchantmentInit;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.util.DamageSource;
@@ -45,6 +46,8 @@ public class AdvancedProtectionEnchantment extends Enchantment {
             return level * 5;
         } else if (this.protectionType == AdvancedProtectionEnchantment.Type.EXPLOSION && source.isExplosion()) {
             return level * 3;
+        } else if (this.protectionType == AdvancedProtectionEnchantment.Type.MAGICAL && source.isMagicDamage()){
+            return level * 3;
         } else {
             return this.protectionType == AdvancedProtectionEnchantment.Type.PROJECTILE && source.isProjectile() ? level * 3 : 0;
         }
@@ -53,6 +56,7 @@ public class AdvancedProtectionEnchantment extends Enchantment {
     public boolean canApplyTogether(Enchantment ench) {
         if (ench instanceof AdvancedProtectionEnchantment) {
             AdvancedProtectionEnchantment protectionenchantment = (AdvancedProtectionEnchantment)ench;
+            ProtectionEnchantment normalprotectionEnchantment = (ProtectionEnchantment)ench;
             if (this.protectionType == protectionenchantment.protectionType) {
                 return false;
             } else {
@@ -82,11 +86,12 @@ public class AdvancedProtectionEnchantment extends Enchantment {
     }
 
     public static enum Type {
-        ALL("all", 1, 11),
-        FIRE("fire", 10, 8),
-        FALL("fall", 5, 6),
-        EXPLOSION("explosion", 5, 8),
-        PROJECTILE("projectile", 3, 6);
+        ALL("all", 5, 16),
+        FIRE("fire", 15, 13),
+        FALL("fall", 10, 11),
+        EXPLOSION("explosion", 10, 13),
+        PROJECTILE("projectile", 8, 11),
+        MAGICAL("magical", 8, 11);
 
         private final String typeName;
         private final int minEnchantability;

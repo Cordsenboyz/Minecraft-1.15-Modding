@@ -4,6 +4,8 @@
   "block.cordsenmod.ruby_block": "Block of Ruby",
   "block.cordsenmod.sapphire_block": "Block of Sapphire",
   "itemGroup.CordsenTab": "Cordsen Mod",
+  "itemGroup.Cordsen_Tools_and_Weapons": "Cordsen Tools and Weapons",
+  "itemGroup.Cordsen_Armor": "Cordsen Armor",
   "item.cordsenmod.ruby_sword": "Ruby Sword",
   "item.cordsenmod.ruby_pickaxe": "Ruby Pickaxe",
   "item.cordsenmod.ruby_axe": "Ruby Axe",
@@ -160,5 +162,6 @@
   "item.cordsenmod.staff_fire": "Staff of Hellfire",
   "enchantment.cordsenmod.wither": "Wither",
   "enchantment.cordsenmod.envenomed": "Envenomed",
-  "enchantment.cordsenmod.armor_penetration": "Armor Penetration"
+  "enchantment.cordsenmod.armor_penetration": "Armor Penetration",
+  "enchantment.cordsenmod.advanced_magic_protection": "Advanced Magic Protection"
 }

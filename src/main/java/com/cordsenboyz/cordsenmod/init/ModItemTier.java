@@ -8,37 +8,37 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    RUBY(2, 1000, 7.0F, 1.0F, 12, () -> {
+    RUBY(2, 1000, 7.0F, 0.0F, 12, () -> {
         return Ingredient.fromItems(ItemInit.RUBY.get());
     }),
 
-    SAPPHIRE(2, 250, 9.0F, 1.0F, 15, () -> {
+    SAPPHIRE(2, 250, 9.0F, 0.0F, 15, () -> {
         return Ingredient.fromItems(ItemInit.SAPPHIRE.get());
     }),
 
-    EMERALD(3, 500, 6.0F, 1.0F, 13, () -> {
+    EMERALD(3, 500, 6.0F, 0.5F, 13, () -> {
         return Ingredient.fromItems(ItemInit.RUBY.get());
     }),
 
-    COPPER(1, 250, 9.0F, 1.0F, 10, () -> {
+    COPPER(1, 250, 9.0F, 0.0F, 10, () -> {
         return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());
     }),
 
-    SILVER(2, 500, 6.0F, 1.0F, 16, () -> {
+    SILVER(2, 500, 6.0F, 0.5F, 16, () -> {
         return Ingredient.fromItems(ItemInit.SILVER_INGOT.get());
     }),
 
-    OSMENITE(4, 2031, 9.0F, 1.0F, 16, () -> {
+    OSMENITE(4, 2031, 9.0F, 0.0F, 16, () -> {
         return Ingredient.fromItems(ItemInit.OSMENITE_INGOT.get());
     }),
 
-    NETHERITE(4, 2031, 9.0F, 1.0F, 16, () -> {
+    NETHERITE(4, 2031, 9.0F, 0.0F, 16, () -> {
         return Ingredient.fromItems(ItemInit.NETHERITE_INGOT.get());
     }),
-    TEMPEST(4, 2031, 9.0F, 1.0F, 16, () -> {
+    TEMPEST(4, 2031, 9.0F, 0.0F, 16, () -> {
         return Ingredient.fromItems(ItemInit.TEMPEST_INGOT.get());
     }),
-    BRONZE(2, 650, 8.0F, 1.0F, 20, () -> {
+    BRONZE(2, 650, 8.0F, 0.5F, 20, () -> {
         return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get());
     });
 
