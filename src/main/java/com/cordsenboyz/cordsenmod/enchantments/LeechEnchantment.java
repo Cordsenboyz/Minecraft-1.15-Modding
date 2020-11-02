@@ -61,6 +61,7 @@ public class LeechEnchantment extends Enchantment {
 
 
 
+
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class LeechOnHit {
 

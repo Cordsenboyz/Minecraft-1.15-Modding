@@ -72,7 +72,7 @@ public class RuinedTower extends Structure<NoFeatureConfig> {
     }
 
     protected int getSeedModifier() {
-        return 947234187;
+        return 234123129;
     }
 
 

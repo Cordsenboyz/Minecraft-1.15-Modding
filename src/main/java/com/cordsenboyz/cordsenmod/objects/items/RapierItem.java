@@ -34,24 +34,6 @@ public class RapierItem extends SwordItem {
         super.addInformation(stack, worldIn, tooltip, flagIn);
             tooltip.add(new TranslationTextComponent("Deals 200% Damage If The Enemy Has No Armor").applyTextStyle(TextFormatting.GRAY));
     }
-
-    @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-    public static class TripleDamageOnHit {
-
-
-        @SubscribeEvent
-        public static void handleLivingDeathEvent(LivingAttackEvent event) {
-            if (event.getSource().getTrueSource() instanceof PlayerEntity) {
-                DamageSource source = event.getSource();
-                Entity target = (Entity) event.getEntity();
-                LivingEntity livingEntity = (LivingEntity) target;
-                PlayerEntity attacker = (PlayerEntity) event.getSource().getTrueSource();
-                if (attacker != null) {
-                    if(((LivingEntity) target).getArmorCoverPercentage() == 0.0F) {
-                        float f = event.getAmount() * 3;
-                    }
-                }
-            }
-        }
-    }
 }
+
+
