@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:emerald"
+    },
+    "d": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:emerald_apple",
+    "count": 1
+  }
+}

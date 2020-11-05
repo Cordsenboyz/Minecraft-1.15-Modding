@@ -3,6 +3,7 @@ package com.cordsenboyz.cordsenmod;
 
 
 import com.cordsenboyz.cordsenmod.init.*;
+import com.cordsenboyz.cordsenmod.world.biomes.LavaLands;
 import com.cordsenboyz.cordsenmod.world.gen.StructureGen;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemGroup;
@@ -71,14 +72,14 @@ public class CordsenMod {
             biome.addStructure(FeatureInit.RUINEDTOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             biome.addStructure(FeatureInit.RUINEDTOWER1.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             biome.addStructure(FeatureInit.RUINEDTOWER2.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-
+            biome.addStructure(FeatureInit.VOLCANO.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.WINDTEMPLE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.HOUSE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.RUINEDTOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.RUINEDTOWER1.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
             biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.RUINEDTOWER2.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-
+            biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, FeatureInit.VOLCANO.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
         }
 
     }

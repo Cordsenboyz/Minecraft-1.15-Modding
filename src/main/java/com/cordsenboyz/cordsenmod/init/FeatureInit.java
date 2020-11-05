@@ -24,12 +24,14 @@ public class FeatureInit {
     public static IStructurePieceType RUINEDTOWER_PIECE = RuinedTowerPieces.Piece::new;
     public static IStructurePieceType RUINEDTOWER1_PIECE = RuinedTower1Pieces.Piece::new;
     public static IStructurePieceType RUINEDTOWER2_PIECE = RuinedTower2Pieces.Piece::new;
+    public static IStructurePieceType VOLCANO_PIECE = VolcanoPieces.Piece::new;
 
     public static final RegistryObject<HouseStructure> HOUSE = FEATURES.register("house", () -> new HouseStructure(NoFeatureConfig::deserialize));
     public static final RegistryObject<WindtempleStructure> WINDTEMPLE = FEATURES.register("windtemple", () -> new WindtempleStructure(NoFeatureConfig::deserialize));
     public static final RegistryObject<RuinedTower> RUINEDTOWER = FEATURES.register("ruined_tower", () -> new RuinedTower(NoFeatureConfig::deserialize));
     public static final RegistryObject<RuinedTower1> RUINEDTOWER1 = FEATURES.register("ruined_tower1", () -> new RuinedTower1(NoFeatureConfig::deserialize));
     public static final RegistryObject<RuinedTower2> RUINEDTOWER2 = FEATURES.register("ruined_tower2", () -> new RuinedTower2(NoFeatureConfig::deserialize));
+    public static final RegistryObject<VolcanoStructure> VOLCANO = FEATURES.register("volcano", () -> new VolcanoStructure(NoFeatureConfig::deserialize));
 
     @SubscribeEvent
     public static void registerStructurePieces(RegistryEvent.Register<Feature<?>> event) {
@@ -38,6 +40,7 @@ public class FeatureInit {
         Registry.register(Registry.STRUCTURE_PIECE, "RUINEDTOWER".toLowerCase(Locale.ROOT), RUINEDTOWER_PIECE);
         Registry.register(Registry.STRUCTURE_PIECE, "RUINEDTOWER1".toLowerCase(Locale.ROOT), RUINEDTOWER1_PIECE);
         Registry.register(Registry.STRUCTURE_PIECE, "RUINEDTOWER2".toLowerCase(Locale.ROOT), RUINEDTOWER2_PIECE);
+        Registry.register(Registry.STRUCTURE_PIECE, "VOLCANO".toLowerCase(Locale.ROOT), VOLCANO_PIECE);
 
     }
 

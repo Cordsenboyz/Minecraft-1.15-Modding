@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " x ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "cordsenmod:sausage"
+    },
+    "d": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result":
+  {
+    "item": "cordsenmod:hotdog",
+    "count": 1
+  }
+}

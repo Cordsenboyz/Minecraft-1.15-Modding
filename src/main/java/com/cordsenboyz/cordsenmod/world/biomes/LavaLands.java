@@ -1,5 +1,6 @@
 package com.cordsenboyz.cordsenmod.world.biomes;
 
+import com.cordsenboyz.cordsenmod.init.FeatureInit;
 import com.cordsenboyz.cordsenmod.world.gen.CordsenFeature;
 import com.cordsenboyz.cordsenmod.world.gen.ModCanyonCarver;
 import com.cordsenboyz.cordsenmod.world.gen.ModCaveCarver;
@@ -22,7 +23,6 @@ public class LavaLands extends Biome {
         this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new ModCaveCarver(ProbabilityConfig::deserialize), new ProbabilityConfig(0.14285715F)));
         this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new ModCanyonCarver(ProbabilityConfig::deserialize), new ProbabilityConfig(0.02F)));
         this.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, CordsenFeature.BASALT_SPIKE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP.configure(new FrequencyConfig(4))));
-
 
         DefaultBiomeFeatures.addOres(this);
         CordsenBiomeFeatures.addLakes(this);

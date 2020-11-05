@@ -19,8 +19,8 @@ import net.minecraft.world.gen.feature.template.TemplateManager;
 import java.util.Random;
 import java.util.function.Function;
 
-public class HouseStructure extends Structure<NoFeatureConfig> {
-    public HouseStructure(Function<Dynamic<?>, ? extends NoFeatureConfig> config) {
+public class VolcanoStructure extends Structure<NoFeatureConfig> {
+    public VolcanoStructure(Function<Dynamic<?>, ? extends NoFeatureConfig> config) {
         super(config);
     }
 
@@ -38,12 +38,12 @@ public class HouseStructure extends Structure<NoFeatureConfig> {
 
     @Override
     public IStartFactory getStartFactory() {
-        return HouseStructure.Start::new;
+        return VolcanoStructure.Start::new;
     }
 
     @Override
     public String getStructureName() {
-        return CordsenMod.MOD_ID + "house";
+        return CordsenMod.MOD_ID + "volcano";
     }
 
     @Override
@@ -72,7 +72,7 @@ public class HouseStructure extends Structure<NoFeatureConfig> {
     }
 
     protected int getSeedModifier() {
-        return 23478237;
+        return 234234151;
     }
 
 
@@ -91,11 +91,11 @@ public class HouseStructure extends Structure<NoFeatureConfig> {
             int y = generator.func_222531_c(x, z, Heightmap.Type.WORLD_SURFACE_WG);
             BlockPos pos = new BlockPos(x, y , z);
 
-            HousePieces.start(templateManagerIn, pos, rotation, this.components, this.rand);
+            VolcanoPieces.start(templateManagerIn, pos, rotation, this.components, this.rand);
 
             this.recalculateStructureSize();
 
-            CordsenMod.LOGGER.info("We can find a house at: " + pos);
+            CordsenMod.LOGGER.info("We can find a volcano at: " + pos);
 
         }
     }
