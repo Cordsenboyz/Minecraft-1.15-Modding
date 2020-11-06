@@ -7,6 +7,7 @@ import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import sun.nio.fs.RegistryFileTypeDetector;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, CordsenMod.MOD_ID);
@@ -223,6 +224,34 @@ public class ItemInit {
             new RapierItem(ItemTier.GOLD, 1 , -2.0F, new Item.Properties().group(CordsenMod.TAB2)));
     public static final RegistryObject<SwordItem> SILVER_RAPIER = ITEMS.register("silver_rapier", () ->
             new RapierItem(ModItemTier.SILVER, 2, -2.0F, new Item.Properties().group(CordsenMod.TAB2)));
+
+    //Dagger
+    public static final RegistryObject<SwordItem> OSMENITE_DAGGER = ITEMS.register("osmenite_dagger", () ->
+            new DaggerItem(ModItemTier.OSMENITE, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> NETHERITE_DAGGER = ITEMS.register("netherite_dagger", () ->
+            new DaggerItem(ModItemTier.NETHERITE, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> TEMPEST_DAGGER = ITEMS.register("tempest_dagger", () ->
+            new DaggerItem(ModItemTier.TEMPEST, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> BRONZE_DAGGER = ITEMS.register("bronze_dagger", () ->
+            new DaggerItem(ModItemTier.BRONZE, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> SILVER_DAGGER = ITEMS.register("silver_dagger", () ->
+            new DaggerItem(ModItemTier.SILVER, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> COPPER_DAGGER = ITEMS.register("copper_dagger", () ->
+            new DaggerItem(ModItemTier.COPPER, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> RUBY_DAGGER = ITEMS.register("ruby_dagger", () ->
+            new DaggerItem(ModItemTier.RUBY, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> EMERALD_DAGGER = ITEMS.register("emerald_dagger", () ->
+            new DaggerItem(ModItemTier.EMERALD, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> SAPPHIRE_DAGGER = ITEMS.register("sapphire_dagger", () ->
+            new DaggerItem(ModItemTier.SAPPHIRE, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> DIAMOND_DAGGER = ITEMS.register("diamond_dagger", () ->
+            new DaggerItem(ItemTier.DIAMOND, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> IRON_DAGGER = ITEMS.register("iron_dagger", () ->
+            new DaggerItem(ItemTier.IRON, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<SwordItem> GOLD_DAGGER = ITEMS.register("gold_dagger", () ->
+            new DaggerItem(ItemTier.GOLD, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
+
+    //Crops
 
     //Food
     public static final RegistryObject<FoodApplePoison> POISON_APPLE = ITEMS.register("poison_apple", () -> new FoodApplePoison(new Item.Properties().group(CordsenMod.TAB)));

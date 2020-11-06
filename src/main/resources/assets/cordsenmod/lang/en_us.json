@@ -206,5 +206,17 @@
   "item.cordsenmod.diamond_apple": "Diamond Apple",
   "item.cordsenmod.sausage": "Sausage",
   "item.cordsenmod.hotdog": "Hotdog",
-  "item.cordsenmod.poison_apple": "Rotten Apple"
+  "item.cordsenmod.poison_apple": "Rotten Apple",
+  "item.cordsenmod.iron_dagger": "Iron Dagger",
+  "item.cordsenmod.gold_dagger": "Gold Dagger",
+  "item.cordsenmod.diamond_dagger": "Diamond Dagger",
+  "item.cordsenmod.copper_dagger": "Copper Dagger",
+  "item.cordsenmod.silver_dagger": "Silver Dagger",
+  "item.cordsenmod.ruby_dagger": "Ruby Dagger",
+  "item.cordsenmod.sapphire_dagger": "Sapphire Dagger",
+  "item.cordsenmod.emerald_dagger": "Emerald Dagger",
+  "item.cordsenmod.osmenite_dagger": "Osmenite Dagger",
+  "item.cordsenmod.netherite_dagger": "Netherite Dagger",
+  "item.cordsenmod.tempest_dagger": "Tempest Dagger",
+  "item.cordsenmod.bronze_dagger": "Bronze Dagger"
 }

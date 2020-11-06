@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cordsenmod:items/copper_dagger"
+  }
+}
