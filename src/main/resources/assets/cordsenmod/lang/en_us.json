@@ -206,6 +206,7 @@
   "item.cordsenmod.diamond_apple": "Diamond Apple",
   "item.cordsenmod.sausage": "Sausage",
   "item.cordsenmod.hotdog": "Hotdog",
+<<<<<<< HEAD
   "item.cordsenmod.poison_apple": "Rotten Apple",
   "item.cordsenmod.iron_dagger": "Iron Dagger",
   "item.cordsenmod.gold_dagger": "Gold Dagger",
@@ -220,4 +221,7 @@
   "item.cordsenmod.tempest_dagger": "Tempest Dagger",
   "item.cordsenmod.bronze_dagger": "Bronze Dagger",
   "block.cordsenmod.tomato_crop": "Tomato Seed"
+=======
+  "item.cordsenmod.poison_apple": "Poison Apple"
+>>>>>>> parent of 2b700aa... Name change on Poison Apple to Rotten Apple
 }
