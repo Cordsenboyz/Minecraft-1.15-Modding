@@ -7,7 +7,10 @@ import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 0e7cd33... Daily Update
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, CordsenMod.MOD_ID);
@@ -225,6 +228,7 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> SILVER_RAPIER = ITEMS.register("silver_rapier", () ->
             new RapierItem(ModItemTier.SILVER, 2, -2.0F, new Item.Properties().group(CordsenMod.TAB2)));
 
+<<<<<<< HEAD
     //Dagger
     public static final RegistryObject<SwordItem> OSMENITE_DAGGER = ITEMS.register("osmenite_dagger", () ->
             new DaggerItem(ModItemTier.OSMENITE, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
@@ -251,6 +255,8 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> GOLD_DAGGER = ITEMS.register("gold_dagger", () ->
             new DaggerItem(ItemTier.GOLD, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
 
+=======
+>>>>>>> parent of 0e7cd33... Daily Update
     //Food
     public static final RegistryObject<FoodApplePoison> POISON_APPLE = ITEMS.register("poison_apple", () -> new FoodApplePoison(new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<FoodAppleDiamond> DIAMOND_APPLE = ITEMS.register("diamond_apple", () -> new FoodAppleDiamond(new Item.Properties().group(CordsenMod.TAB)));
