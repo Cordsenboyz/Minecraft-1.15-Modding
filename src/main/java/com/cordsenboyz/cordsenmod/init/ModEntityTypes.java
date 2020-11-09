@@ -13,6 +13,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModEntityTypes {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, CordsenMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<ExampleEntity>> EXAMPLE_ENTITY = ENTITY_TYPES.register("example_entity", ()-> EntityType.Builder.<ExampleEntity>create(ExampleEntity::new, EntityClassification.CREATURE).size(0.9F, 1.3F).build(new ResourceLocation(CordsenMod.MOD_ID, "example_entity").toString()));
+    public static final RegistryObject<EntityType<ExampleEntity>> EXAMPLE_ENTITY = ENTITY_TYPES.register("example_entity", ()-> EntityType.Builder.create(ExampleEntity::new, EntityClassification.CREATURE).size(0.9F, 1.3F).build(new ResourceLocation(CordsenMod.MOD_ID, "example_entity").toString()));
 
 }

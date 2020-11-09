@@ -34,7 +34,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 
     private NonNullList<ItemStack> chestContents = NonNullList.withSize(54, ItemStack.EMPTY);
     protected int numPlayerUsing;
-    private IItemHandlerModifiable items = createHanlder();
+    private final IItemHandlerModifiable items = createHanlder();
     private LazyOptional<IItemHandlerModifiable> itemHandler = LazyOptional.of(() -> items);
 
     public ExampleChestTileEntity(TileEntityType<?> typeIn) {
@@ -90,7 +90,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
         double dx = (double)this.pos.getX() + 0.5D;
         double dy = (double)this.pos.getY() + 0.5D;
         double dz = (double)this.pos.getZ() + 0.5D;
-        this.world.playSound((PlayerEntity)null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.5f, this.world.rand.nextFloat()* 0.1f + 0.9f);
+        this.world.playSound(null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.5f, this.world.rand.nextFloat()* 0.1f + 0.9f);
     }
 
     @Override

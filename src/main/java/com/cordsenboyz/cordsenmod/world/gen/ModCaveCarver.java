@@ -34,9 +34,9 @@ public class ModCaveCarver extends CaveWorldCarver {
         int j = p_225555_3_.nextInt(p_225555_3_.nextInt(p_225555_3_.nextInt(this.func_222724_a()) + 1) + 1);
 
         for (int k = 0; k < j; ++k) {
-            double d0 = (double) (p_225555_5_ * 16 + p_225555_3_.nextInt(16));
-            double d1 = (double) this.generateCaveStartY(p_225555_3_);
-            double d2 = (double) (p_225555_6_ * 16 + p_225555_3_.nextInt(16));
+            double d0 = p_225555_5_ * 16 + p_225555_3_.nextInt(16);
+            double d1 = this.generateCaveStartY(p_225555_3_);
+            double d2 = p_225555_6_ * 16 + p_225555_3_.nextInt(16);
             int l = 1;
             if (p_225555_3_.nextInt(4) == 0) {
                 double d3 = 0.5D;
@@ -96,9 +96,9 @@ public class ModCaveCarver extends CaveWorldCarver {
             double d0 = 1.5D + (double) (MathHelper.sin((float) Math.PI * (float) j / (float) p_227206_18_) * p_227206_14_);
             double d1 = d0 * p_227206_19_;
             float f2 = MathHelper.cos(p_227206_16_);
-            p_227206_8_ += (double) (MathHelper.cos(p_227206_15_) * f2);
-            p_227206_10_ += (double) MathHelper.sin(p_227206_16_);
-            p_227206_12_ += (double) (MathHelper.sin(p_227206_15_) * f2);
+            p_227206_8_ += MathHelper.cos(p_227206_15_) * f2;
+            p_227206_10_ += MathHelper.sin(p_227206_16_);
+            p_227206_12_ += MathHelper.sin(p_227206_15_) * f2;
             p_227206_16_ = p_227206_16_ * (flag ? 0.92F : 0.7F);
             p_227206_16_ = p_227206_16_ + f1 * 0.1F;
             p_227206_15_ += f * 0.1F;

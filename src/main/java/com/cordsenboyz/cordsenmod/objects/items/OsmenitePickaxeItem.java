@@ -46,7 +46,7 @@ public class OsmenitePickaxeItem extends PickaxeItem {
         if (event.getEntityLiving() instanceof PlayerEntity) {
             World world = event.getEntity().world;
             PlayerEntity player = (PlayerEntity) event.getEntityLiving();
-            BlockState state = (BlockState) player.getBlockState();
+            BlockState state = player.getBlockState();
             float f = player.inventory.getDestroySpeed(state);
             if (player.areEyesInFluid(FluidTags.WATER) && player.getHeldItemMainhand().getItem() != ItemInit.OSMENITE_PICKAXE.get()) {
                 f /= 5.0F;

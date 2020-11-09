@@ -51,7 +51,7 @@ import net.minecraft.potion.Effects;
 
 
         public boolean canApply(ItemStack stack) {
-            return stack.getItem() instanceof AxeItem ? true : super.canApply(stack);
+            return stack.getItem() instanceof AxeItem || super.canApply(stack);
         }
 
         public void onEntityDamaged(LivingEntity user, Entity target, int level) {

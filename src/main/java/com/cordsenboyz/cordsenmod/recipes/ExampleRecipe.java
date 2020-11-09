@@ -12,7 +12,7 @@ import net.minecraftforge.items.wrapper.RecipeWrapper;
 public class ExampleRecipe implements IExampleRecipe {
 
     private final ResourceLocation id;
-    private Ingredient input;
+    private final Ingredient input;
     private final ItemStack output;
 
     public ExampleRecipe(ResourceLocation id, Ingredient input, ItemStack output) {
@@ -23,10 +23,7 @@ public class ExampleRecipe implements IExampleRecipe {
 
     @Override
     public boolean matches(RecipeWrapper inv, World worldIn) {
-        if (this.input.test(inv.getStackInSlot(0))) {
-            return true;
-        }
-        return false;
+        return this.input.test(inv.getStackInSlot(0));
     }
 
     @Override

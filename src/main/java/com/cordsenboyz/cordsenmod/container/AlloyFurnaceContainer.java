@@ -22,7 +22,7 @@ import java.util.Objects;
 public class AlloyFurnaceContainer extends Container {
 
     public AlloyFurnaceTileEntity tileEntity;
-    private IWorldPosCallable canInteractWithCallable;
+    private final IWorldPosCallable canInteractWithCallable;
     public FunctionalIntReferenceHolder currentSmeltTime;
 
     // Server Constructor

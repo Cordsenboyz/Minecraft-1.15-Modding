@@ -79,13 +79,13 @@ public class AdvancedProtectionEnchantment extends Enchantment {
     public static double getBlastDamageReduction(LivingEntity entityLivingBaseIn, double damage) {
         int i = EnchantmentHelper.getMaxEnchantmentLevel(EnchantmentInit.ADVANCED_BLAST_PROTECTION.get(), entityLivingBaseIn);
         if (i > 0) {
-            damage -= (double)MathHelper.floor(damage * (double)((float)i * 0.15F));
+            damage -= MathHelper.floor(damage * (double)((float)i * 0.15F));
         }
 
         return damage;
     }
 
-    public static enum Type {
+    public enum Type {
         ALL("all", 5, 16),
         FIRE("fire", 15, 13),
         FALL("fall", 10, 11),
@@ -97,7 +97,7 @@ public class AdvancedProtectionEnchantment extends Enchantment {
         private final int minEnchantability;
         private final int levelCost;
 
-        private Type(String p_i48839_3_, int p_i48839_4_, int p_i48839_5_) {
+        Type(String p_i48839_3_, int p_i48839_4_, int p_i48839_5_) {
             this.typeName = p_i48839_3_;
             this.minEnchantability = p_i48839_4_;
             this.levelCost = p_i48839_5_;

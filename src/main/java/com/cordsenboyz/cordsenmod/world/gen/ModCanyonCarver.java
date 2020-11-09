@@ -31,9 +31,9 @@ public class ModCanyonCarver extends CanyonWorldCarver {
 
     public boolean func_225555_a_(IChunk p_225555_1_, Function<BlockPos, Biome> p_225555_2_, Random p_225555_3_, int p_225555_4_, int p_225555_5_, int p_225555_6_, int p_225555_7_, int p_225555_8_, BitSet p_225555_9_, ProbabilityConfig p_225555_10_) {
         int i = (this.func_222704_c() * 2 - 1) * 16;
-        double d0 = (double)(p_225555_5_ * 16 + p_225555_3_.nextInt(16));
-        double d1 = (double)(p_225555_3_.nextInt(p_225555_3_.nextInt(40) + 8) + 20);
-        double d2 = (double)(p_225555_6_ * 16 + p_225555_3_.nextInt(16));
+        double d0 = p_225555_5_ * 16 + p_225555_3_.nextInt(16);
+        double d1 = p_225555_3_.nextInt(p_225555_3_.nextInt(40) + 8) + 20;
+        double d2 = p_225555_6_ * 16 + p_225555_3_.nextInt(16);
         float f = p_225555_3_.nextFloat() * ((float)Math.PI * 2F);
         float f1 = (p_225555_3_.nextFloat() - 0.5F) * 2.0F / 8.0F;
         double d3 = 3.0D;
@@ -66,9 +66,9 @@ public class ModCanyonCarver extends CanyonWorldCarver {
             d1 = d1 * ((double)random.nextFloat() * 0.25D + 0.75D);
             float f2 = MathHelper.cos(p_227204_16_);
             float f3 = MathHelper.sin(p_227204_16_);
-            p_227204_8_ += (double)(MathHelper.cos(p_227204_15_) * f2);
-            p_227204_10_ += (double)f3;
-            p_227204_12_ += (double)(MathHelper.sin(p_227204_15_) * f2);
+            p_227204_8_ += MathHelper.cos(p_227204_15_) * f2;
+            p_227204_10_ += f3;
+            p_227204_12_ += MathHelper.sin(p_227204_15_) * f2;
             p_227204_16_ = p_227204_16_ * 0.7F;
             p_227204_16_ = p_227204_16_ + f1 * 0.05F;
             p_227204_15_ += f4 * 0.05F;

@@ -218,5 +218,6 @@
   "item.cordsenmod.osmenite_dagger": "Osmenite Dagger",
   "item.cordsenmod.netherite_dagger": "Netherite Dagger",
   "item.cordsenmod.tempest_dagger": "Tempest Dagger",
-  "item.cordsenmod.bronze_dagger": "Bronze Dagger"
+  "item.cordsenmod.bronze_dagger": "Bronze Dagger",
+  "block.cordsenmod.tomato_crop": "Tomato Seed"
 }

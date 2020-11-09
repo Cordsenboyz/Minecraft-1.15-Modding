@@ -57,7 +57,7 @@ public class EnvenomedEnchantment extends Enchantment {
         public static void handleLivingDeathEvent(LivingAttackEvent event) {
             if (event.getSource().getTrueSource() instanceof PlayerEntity) {
                 DamageSource source = event.getSource();
-                Entity target = (Entity) event.getEntity();
+                Entity target = event.getEntity();
                 LivingEntity livingEntity = (LivingEntity)target;
                 PlayerEntity attacker = (PlayerEntity) event.getSource().getTrueSource();
                 if (attacker != null) {

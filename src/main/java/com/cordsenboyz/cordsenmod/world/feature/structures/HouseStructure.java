@@ -29,9 +29,7 @@ public class HouseStructure extends Structure<NoFeatureConfig> {
         ChunkPos pos = this.getStartPositionForPosition(generator, rand, chunkX, chunkZ, 0 ,0);
 
         if(chunkX == pos.x && chunkZ == pos.z) {
-            if(generator.hasStructure(biome, this)) {
-                return true;
-            }
+            return generator.hasStructure(biome, this);
         }
         return false;
     }

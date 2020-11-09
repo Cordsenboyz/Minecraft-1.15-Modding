@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "cordsenmod:blocks/tomato_crop_stage3"
+  }
+}

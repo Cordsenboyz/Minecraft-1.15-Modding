@@ -25,7 +25,7 @@ public class CloudBlock extends WebBlock {
     }
     @Override
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        entityIn.setMotionMultiplier(state, new Vec3d(0.25D, (double)0.2F, 0.25D));
+        entityIn.setMotionMultiplier(state, new Vec3d(0.25D, 0.2F, 0.25D));
     }
 }
 

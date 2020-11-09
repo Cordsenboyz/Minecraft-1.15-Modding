@@ -38,7 +38,7 @@ public class UpStepEnchantment extends Enchantment {
 
     @Override
     protected boolean canApplyTogether(Enchantment ench) {
-        return ench.equals(Enchantments.DEPTH_STRIDER) ? false : true;
+        return !ench.equals(Enchantments.DEPTH_STRIDER);
     }
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class UpstepEquipped {

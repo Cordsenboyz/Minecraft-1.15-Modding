@@ -7,7 +7,7 @@ import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import sun.nio.fs.RegistryFileTypeDetector;
+
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, CordsenMod.MOD_ID);
@@ -250,8 +250,6 @@ public class ItemInit {
             new DaggerItem(ItemTier.IRON, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<SwordItem> GOLD_DAGGER = ITEMS.register("gold_dagger", () ->
             new DaggerItem(ItemTier.GOLD, 0, -0.9F, new Item.Properties().group(CordsenMod.TAB)));
-
-    //Crops
 
     //Food
     public static final RegistryObject<FoodApplePoison> POISON_APPLE = ITEMS.register("poison_apple", () -> new FoodApplePoison(new Item.Properties().group(CordsenMod.TAB)));

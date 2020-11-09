@@ -44,7 +44,7 @@ public class ExampleEntity extends AnimalEntity {
     @Override
     public AgeableEntity createChild(AgeableEntity ageable) {
         ExampleEntity entity = new ExampleEntity(ModEntityTypes.EXAMPLE_ENTITY.get(), this.world);
-        entity.onInitialSpawn(this.world, this.world.getDifficultyForLocation(new BlockPos(entity)), SpawnReason.BREEDING, (ILivingEntityData) null, (CompoundNBT) null);
+        entity.onInitialSpawn(this.world, this.world.getDifficultyForLocation(new BlockPos(entity)), SpawnReason.BREEDING, null, null);
         return entity;
     }
 

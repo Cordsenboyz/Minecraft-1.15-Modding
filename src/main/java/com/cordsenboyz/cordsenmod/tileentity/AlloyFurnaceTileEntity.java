@@ -49,7 +49,7 @@ public class AlloyFurnaceTileEntity extends TileEntity implements ITickableTileE
     private ITextComponent customName;
     public int currentSmeltTime;
     public final int maxSmeltTime = 100;
-    private ExampleItemHandler inventory;
+    private final ExampleItemHandler inventory;
 
     public AlloyFurnaceTileEntity(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
@@ -125,7 +125,7 @@ public class AlloyFurnaceTileEntity extends TileEntity implements ITickableTileE
             this.customName = ITextComponent.Serializer.fromJson(compound.getString("CustomName"));
         }
 
-        NonNullList<ItemStack> inv = NonNullList.<ItemStack>withSize(this.inventory.getSlots(), ItemStack.EMPTY);
+        NonNullList<ItemStack> inv = NonNullList.withSize(this.inventory.getSlots(), ItemStack.EMPTY);
         ItemStackHelper.loadAllItems(compound, inv);
         this.inventory.setNonNullList(inv);
 

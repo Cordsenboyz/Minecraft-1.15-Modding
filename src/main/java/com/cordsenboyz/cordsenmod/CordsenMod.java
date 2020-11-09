@@ -3,9 +3,12 @@ package com.cordsenboyz.cordsenmod;
 
 
 import com.cordsenboyz.cordsenmod.init.*;
+import com.cordsenboyz.cordsenmod.objects.blocks.TomatoCrop;
 import com.cordsenboyz.cordsenmod.world.biomes.LavaLands;
 import com.cordsenboyz.cordsenmod.world.gen.StructureGen;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipeSerializer;
@@ -21,12 +24,14 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -86,6 +91,18 @@ public class CordsenMod {
 
     private void doClientStuff(final FMLClientSetupEvent event) {
 
+    }
+    @SubscribeEvent
+    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+        final IForgeRegistry<Item> registry = event.getRegistry();
+
+        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get)
+                .filter(block -> !(block instanceof TomatoCrop)).forEach(block -> {
+            final Item.Properties properties = new Item.Properties().group(CordsenMod.TAB);
+            final BlockItem blockItem = new BlockItem(block, properties);
+            blockItem.setRegistryName(block.getRegistryName());
+            registry.register(blockItem);
+        });
     }
 
 

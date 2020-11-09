@@ -40,8 +40,8 @@ public class VolcanoPieces {
         pieces.add(new VolcanoPieces.Piece(manager, PART_1, blockpos, rot));
     }
     public static class Piece extends TemplateStructurePiece {
-        private ResourceLocation resourceLocation;
-        private Rotation rotation;
+        private final ResourceLocation resourceLocation;
+        private final Rotation rotation;
 
         public Piece(TemplateManager templateManagerIn, ResourceLocation resourceLocationIn, BlockPos pos,
                      Rotation rotationIn) {

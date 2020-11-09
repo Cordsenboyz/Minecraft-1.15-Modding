@@ -34,11 +34,7 @@ public class ElytraNBT {
     }
 
     public static boolean isUseable(ItemStack chestStack, ItemStack elytraStack) {
-        if (elytraStack.isEmpty()) {
-            return false;
-            }else{
-                return true;
-            }
+        return !elytraStack.isEmpty();
         }
     }
 
