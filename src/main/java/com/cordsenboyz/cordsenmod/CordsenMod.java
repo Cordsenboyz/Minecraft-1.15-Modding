@@ -4,6 +4,7 @@ package com.cordsenboyz.cordsenmod;
 
 import com.cordsenboyz.cordsenmod.init.*;
 
+
 import com.cordsenboyz.cordsenmod.world.biomes.LavaLands;
 import com.cordsenboyz.cordsenmod.world.gen.StructureGen;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -35,6 +36,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Objects;
+
 @Mod("cordsenmod")
 @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CordsenMod {
@@ -63,6 +66,21 @@ public class CordsenMod {
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
     }
+   /* @SubscribeEvent
+    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+        final IForgeRegistry<Item> registry = event.getRegistry();
+
+        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get)
+                .filter(block -> !(block instanceof TomatoCrop))
+                .forEach(block -> {
+                    final Item.Properties properties = new Item.Properties().group(CordsenMod.TAB);
+                    final BlockItem blockItem = new BlockItem(block, properties);
+                    blockItem.setRegistryName(block.getRegistryName());
+                    registry.register(blockItem);
+                });
+
+        LOGGER.debug("Registered BlockItems!");
+    }*/
 
     @SubscribeEvent
     public static void onRegisterBiome(final RegistryEvent.Register<Biome> event) {

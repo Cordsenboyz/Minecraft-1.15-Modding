@@ -225,6 +225,8 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> SILVER_RAPIER = ITEMS.register("silver_rapier", () ->
             new RapierItem(ModItemTier.SILVER, 2, -2.0F, new Item.Properties().group(CordsenMod.TAB2)));
 
+
+
     //Food
     public static final RegistryObject<FoodApplePoison> POISON_APPLE = ITEMS.register("poison_apple", () -> new FoodApplePoison(new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<FoodAppleDiamond> DIAMOND_APPLE = ITEMS.register("diamond_apple", () -> new FoodAppleDiamond(new Item.Properties().group(CordsenMod.TAB)));
