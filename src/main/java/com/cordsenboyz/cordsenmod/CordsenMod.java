@@ -3,7 +3,7 @@ package com.cordsenboyz.cordsenmod;
 
 
 import com.cordsenboyz.cordsenmod.init.*;
-import com.cordsenboyz.cordsenmod.objects.blocks.TomatoCrop;
+
 import com.cordsenboyz.cordsenmod.world.biomes.LavaLands;
 import com.cordsenboyz.cordsenmod.world.gen.StructureGen;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -91,18 +91,6 @@ public class CordsenMod {
 
     private void doClientStuff(final FMLClientSetupEvent event) {
 
-    }
-    @SubscribeEvent
-    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
-        final IForgeRegistry<Item> registry = event.getRegistry();
-
-        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get)
-                .filter(block -> !(block instanceof TomatoCrop)).forEach(block -> {
-            final Item.Properties properties = new Item.Properties().group(CordsenMod.TAB);
-            final BlockItem blockItem = new BlockItem(block, properties);
-            blockItem.setRegistryName(block.getRegistryName());
-            registry.register(blockItem);
-        });
     }
 
 

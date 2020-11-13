@@ -20,7 +20,7 @@ public enum ModItemTier implements IItemTier {
         return Ingredient.fromItems(ItemInit.RUBY.get());
     }),
 
-    COPPER(1, 250, 9.0F, 0.0F, 10, () -> {
+    COPPER(1, 250, 5.0F, 0.0F, 10, () -> {
         return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());
     }),
 

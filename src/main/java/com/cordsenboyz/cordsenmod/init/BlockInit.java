@@ -108,10 +108,4 @@ public class BlockInit {
     public static final RegistryObject<Item> TEMPEST_BLOCK_ITEM = ITEMS.register("tempest_block", () -> new BlockItem(TEMPEST_BLOCK.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> NETHERITE_ORE_ITEM = ITEMS.register("netherite_ore", () -> new BlockItem(NETHERITE_ORE.get(), new Item.Properties().group(CordsenMod.TAB)));
 
-    //Crops
-    /*
-    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoCrop(Block.Properties.from(Blocks.WHEAT)));
-
-    public static final RegistryObject<Item> TOMATO_SEED = ITEMS.register("tomato_seed", () -> new BlockItem(BlockInit.TOMATO_CROP.get(), new Item.Properties().group(CordsenMod.TAB)));
-*/
 }
