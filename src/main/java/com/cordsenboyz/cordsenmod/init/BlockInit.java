@@ -63,6 +63,9 @@ public class BlockInit {
     public static final RegistryObject<Block> BASALT = BLOCKS.register("basalt", () -> new Block(Block.Properties.from(Blocks.STONE)));
     public static final RegistryObject<Block> BLACKSTONE = BLOCKS.register("blackstone", () -> new Block(Block.Properties.from(Blocks.STONE)));
 
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoCrop(Block.Properties.from(Blocks.POTATOES)));
+    public static final RegistryObject<BlockItem> TOMATO_SEED = ITEMS.register("tomato_seed", () -> new BlockItem(BlockInit.TOMATO_CROP.get(), new Item.Properties().group(CordsenMod.TAB)));
+
 
     public static final RegistryObject<Item> BASALT_ITEM = ITEMS.register("basalt", () -> new BlockItem(BASALT.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> BLACKSTONE_ITEM = ITEMS.register("blackstone", () -> new BlockItem(BLACKSTONE.get(), new Item.Properties().group(CordsenMod.TAB)));

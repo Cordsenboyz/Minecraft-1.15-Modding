@@ -235,6 +235,7 @@ public class ItemInit {
     public static final RegistryObject<FoodAppleEmerald> EMERALD_APPLE = ITEMS.register("emerald_apple", () -> new FoodAppleEmerald(new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<FoodHotdog> HOTDOG = ITEMS.register("hotdog", () -> new FoodHotdog(new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<FoodSausage> SAUSAGE = ITEMS.register("sausage", () -> new FoodSausage(new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<FoodTomato> TOMATO = ITEMS.register("tomato", () -> new FoodTomato(new Item.Properties().group(CordsenMod.TAB)));
 
 
     // Bow
