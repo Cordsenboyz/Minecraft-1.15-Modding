@@ -28,5 +28,5 @@ public class EnchantmentInit {
     public static final RegistryObject<Enchantment> ADVANCED_PROJECTILE_PROTECTION = ENCHANTMENTS.register("advanced_projectile_protection", () -> new AdvancedProtectionEnchantment(Enchantment.Rarity.VERY_RARE, AdvancedProtectionEnchantment.Type.PROJECTILE, EquipmentSlotType.FEET, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.HEAD));
     public static final RegistryObject<Enchantment> ENVENOMED = ENCHANTMENTS.register("envenomed", () -> new EnvenomedEnchantment(Enchantment.Rarity.RARE, EnchantmentType.WEAPON, new EquipmentSlotType[] {EquipmentSlotType.MAINHAND}));
     public static final RegistryObject<Enchantment> ADVANCED_MAGIC_PROTECTION = ENCHANTMENTS.register("advanced_magic_protection", () -> new AdvancedProtectionEnchantment(Enchantment.Rarity.VERY_RARE, AdvancedProtectionEnchantment.Type.MAGICAL, EquipmentSlotType.FEET, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.HEAD));
-
+    public static final RegistryObject<Enchantment> ELEMENTAL = ENCHANTMENTS.register("elemental", () -> new ElementalEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentType.WEAPON, new EquipmentSlotType[] {EquipmentSlotType.MAINHAND}));
 }
