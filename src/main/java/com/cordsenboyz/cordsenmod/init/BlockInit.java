@@ -35,7 +35,9 @@ public class BlockInit {
     public static final RegistryObject<Block> TEMPEST_BLOCK = BLOCKS.register("tempest_block", TempestBlock::new);
     public static final RegistryObject<Block> LEAD_BLOCK = BLOCKS.register("lead_block", LeadBlock::new);
     public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block", BronzeBlock::new);
-    public static final RegistryObject<Block> EXAMPLE_CHEST = BLOCKS.register("example_chest", () -> new ExampleChestBlock(Block.Properties.from(BlockInit.BRONZE_BLOCK.get())));
+    public static final RegistryObject<Block> DIAMOND_BARREL = BLOCKS.register("diamond_barrel", () -> new DiamondBarrelBlock(Block.Properties.from(Blocks.BARREL)));
+    public static final RegistryObject<Block> IRON_BARREL = BLOCKS.register("iron_barrel", () -> new IronBarrelBlock(Block.Properties.from(Blocks.BARREL)));
+    public static final RegistryObject<Block> GOLD_BARREL = BLOCKS.register("gold_barrel", () -> new GoldBarrelBlock(Block.Properties.from(Blocks.BARREL)));
     public static final RegistryObject<Block> RED_GRASS = BLOCKS.register("red_grass", () -> new GrassBlock(Block.Properties.from(Blocks.GRASS_BLOCK)));
     public static final RegistryObject<Block> OSMENITE_ORE = BLOCKS.register("osmenite_ore", OsmeniteOre::new);
     public static final RegistryObject<Block> ALLOY_FURNACE = BLOCKS.register("alloy_furnace", () -> new AlloyFurnaceBlock(Block.Properties.from(Blocks.FURNACE)));
@@ -66,7 +68,6 @@ public class BlockInit {
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoCrop(Block.Properties.from(Blocks.POTATOES)));
     public static final RegistryObject<BlockItem> TOMATO_SEED = ITEMS.register("tomato_seed", () -> new BlockItem(BlockInit.TOMATO_CROP.get(), new Item.Properties().group(CordsenMod.TAB)));
 
-
     public static final RegistryObject<Item> BASALT_ITEM = ITEMS.register("basalt", () -> new BlockItem(BASALT.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> BLACKSTONE_ITEM = ITEMS.register("blackstone", () -> new BlockItem(BLACKSTONE.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
@@ -84,7 +85,9 @@ public class BlockInit {
     public static final RegistryObject<Item> RED_GRASS_ITEM = ITEMS.register("red_grass", () -> new BlockItemBase(RED_GRASS.get()));
     public static final RegistryObject<Item> OSMENITE_ORE_ITEM = ITEMS.register("osmenite_ore_item", () -> new BlockItem(OSMENITE_ORE.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> ALLOY_FURNACE_ITEM = ITEMS.register("alloy_furnace", () -> new BlockItem(ALLOY_FURNACE.get(), new Item.Properties().group(CordsenMod.TAB)));
-    public static final RegistryObject<Item> EXAMPLE_CHEST_ITEM = ITEMS.register("example_chest", () -> new BlockItem(EXAMPLE_CHEST.get(), new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<Item> DIAMOND_BARREL_ITEM = ITEMS.register("diamond_barrel", () -> new BlockItem(DIAMOND_BARREL.get(), new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<Item> GOLD_BARREL_ITEM = ITEMS.register("gold_barrel", () -> new BlockItem(GOLD_BARREL.get(), new Item.Properties().group(CordsenMod.TAB)));
+    public static final RegistryObject<Item> IRON_BARREL_ITEM = ITEMS.register("iron_barrel", () -> new BlockItem(IRON_BARREL.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> TEMPEST_ORE_ITEM = ITEMS.register("tempest_ore_item", () -> new BlockItem(TEMPEST_ORE.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> TEMPEST_QUARTZ_ITEM = ITEMS.register("tempest_quartz", () -> new BlockItem(TEMPEST_QUARTZ.get(), new Item.Properties().group(CordsenMod.TAB)));
     public static final RegistryObject<Item> TEMPEST_QUARTZ2_ITEM = ITEMS.register("tempest_quartz2", () -> new BlockItem(TEMPEST_QUARTZ2.get(), new Item.Properties().group(CordsenMod.TAB)));

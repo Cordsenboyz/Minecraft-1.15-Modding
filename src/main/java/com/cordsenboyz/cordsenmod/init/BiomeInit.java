@@ -24,10 +24,10 @@ public class BiomeInit {
 
     public static final RegistryObject<Biome> MAPLEFOREST = BIOMES.register("mapleforest",
             () -> new MapleForest(new Biome.Builder().precipitation(Biome.RainType.RAIN).scale(0.2F).temperature(1.0F)
-            .waterColor(4159204).waterFogColor(329011)
-            .surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
-                    Blocks.DIRT.getDefaultState(), Blocks.GRAVEL.getDefaultState())).
-                    category(Biome.Category.PLAINS).downfall(0.8F).depth(0.1F).parent(null)));
+                    .waterColor(4159204).waterFogColor(329011)
+                    .surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
+                            Blocks.DIRT.getDefaultState(), Blocks.GRAVEL.getDefaultState())).
+                            category(Biome.Category.PLAINS).downfall(0.8F).depth(0.1F).parent(null)));
 
     public static final RegistryObject<Biome> CHARREDFOREST = BIOMES.register("charredforest",
             () -> new CharredForest(new Biome.Builder().precipitation(Biome.RainType.NONE).scale(0.2F).temperature(10.0F)

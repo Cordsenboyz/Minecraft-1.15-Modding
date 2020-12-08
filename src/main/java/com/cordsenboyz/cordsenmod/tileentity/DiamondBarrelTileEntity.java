@@ -1,8 +1,8 @@
 package com.cordsenboyz.cordsenmod.tileentity;
 
-import com.cordsenboyz.cordsenmod.container.ExampleChestContainer;
+import com.cordsenboyz.cordsenmod.container.DiamondBarrelContainer;
 import com.cordsenboyz.cordsenmod.init.ModTileEntityTypes;
-import com.cordsenboyz.cordsenmod.objects.blocks.ExampleChestBlock;
+import com.cordsenboyz.cordsenmod.objects.blocks.DiamondBarrelBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -30,18 +30,18 @@ import net.minecraftforge.items.wrapper.InvWrapper;
 
 import javax.annotation.Nonnull;
 
-public class ExampleChestTileEntity extends LockableLootTileEntity {
+public class DiamondBarrelTileEntity extends LockableLootTileEntity {
 
     private NonNullList<ItemStack> chestContents = NonNullList.withSize(54, ItemStack.EMPTY);
     protected int numPlayerUsing;
     private final IItemHandlerModifiable items = createHanlder();
     private LazyOptional<IItemHandlerModifiable> itemHandler = LazyOptional.of(() -> items);
 
-    public ExampleChestTileEntity(TileEntityType<?> typeIn) {
+    public DiamondBarrelTileEntity(TileEntityType<?> typeIn) {
         super(typeIn);
     }
-    public ExampleChestTileEntity() {
-        this(ModTileEntityTypes.EXAMPLE_CHEST.get());
+    public DiamondBarrelTileEntity() {
+        this(ModTileEntityTypes.DIAMOND_BARREL.get());
     }
 
     @Override
@@ -56,7 +56,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 
     @Override
     protected Container createMenu(int id, PlayerInventory player) {
-        return new ExampleChestContainer(id, player, this);
+        return new DiamondBarrelContainer(id, player, this);
     }
 
     @Override
@@ -66,7 +66,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 
     @Override
     protected ITextComponent getDefaultName() {
-        return new TranslationTextComponent("container.example_chest");
+        return new TranslationTextComponent("container.diamond_barrel");
     }
 
     @Override
@@ -123,7 +123,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
     }
     protected void onOpenOrClose() {
         Block block = this.getBlockState().getBlock();
-        if(block instanceof ExampleChestBlock){
+        if(block instanceof DiamondBarrelBlock){
             this.world.addBlockEvent(this.pos, block, 1, this.numPlayerUsing);
             this.world.notifyNeighborsOfStateChange(this.pos, block);
         }
@@ -132,13 +132,13 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
         BlockState blockstate = reader.getBlockState(pos);
         if(blockstate.hasTileEntity()) {
             TileEntity tileEntity = reader.getTileEntity(pos);
-            if(tileEntity instanceof ExampleChestTileEntity){
-                return ((ExampleChestTileEntity)tileEntity).numPlayerUsing;
+            if(tileEntity instanceof DiamondBarrelTileEntity){
+                return ((DiamondBarrelTileEntity)tileEntity).numPlayerUsing;
             }
         }
         return 0;
     }
-    public static void swapContents(ExampleChestTileEntity te, ExampleChestTileEntity otherTe){
+    public static void swapContents(DiamondBarrelTileEntity te, DiamondBarrelTileEntity otherTe){
         NonNullList<ItemStack> list = te.getItems();
         te.setItems(otherTe.getItems());
         otherTe.setItems(list);

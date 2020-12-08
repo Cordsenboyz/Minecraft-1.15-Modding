@@ -3,7 +3,9 @@ package com.cordsenboyz.cordsenmod.util;
 import com.cordsenboyz.cordsenmod.CordsenMod;
 import com.cordsenboyz.cordsenmod.client.entity.render.ExampleEntityRender;
 import com.cordsenboyz.cordsenmod.client.gui.AlloyFurnaceScreen;
-import com.cordsenboyz.cordsenmod.client.gui.ExampleChestScreen;
+import com.cordsenboyz.cordsenmod.client.gui.DiamondBarrelScreen;
+import com.cordsenboyz.cordsenmod.client.gui.GoldBarrelScreen;
+import com.cordsenboyz.cordsenmod.client.gui.IronBarrelScreen;
 import com.cordsenboyz.cordsenmod.init.BlockInit;
 import com.cordsenboyz.cordsenmod.init.ModContainerTypes;
 import com.cordsenboyz.cordsenmod.init.ModEntityTypes;
@@ -21,7 +23,9 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
-        ScreenManager.registerFactory(ModContainerTypes.EXAMPLE_CHEST.get(), ExampleChestScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.DIAMOND_BARREL.get(), DiamondBarrelScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.IRON_BARREL.get(), IronBarrelScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.GOLD_BARREL.get(), GoldBarrelScreen::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EXAMPLE_ENTITY.get(), ExampleEntityRender::new);
         ScreenManager.registerFactory(ModContainerTypes.ALLOY_FURNACE.get(), AlloyFurnaceScreen::new);
         RenderTypeLookup.setRenderLayer(BlockInit.OLDWOOD_SAPLING.get(), RenderType.getCutout());

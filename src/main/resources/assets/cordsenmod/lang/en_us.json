@@ -59,10 +59,13 @@
   "item.cordsenmod.sapphire_chestplate": "Sapphire Chestplate",
   "item.cordsenmod.sapphire_leggings": "Sapphire Leggings",
   "item.cordsenmod.sapphire_boots": "Sapphire Boots",
-  "block.cordsenmod.example_chest": "Example Chest",
+  "block.cordsenmod.diamond_barrel": "Diamond Barrel",
   "block.cordsenmod.red_grass": "Charred Grass",
   "item.cordsenmod.osmenite_ingot": "Osmenite Ingot",
-  "container.example_chest": "Example Chest",
+  "container.diamond_barrel": "Diamond Barrel",
+  "container.iron_barrel": "Iron Barrel",
+  "container.gold_barrel": "Gold Barrel",
+  "block.cordsenmod.gold_barrel": "Gold Barrel",
   "block.cordsenmod.osmenite_ore": "Osmenite Ore",
   "item.cordsenmod.osmenite_helmet": "Osmenite Helmet",
   "item.cordsenmod.osmenite_chestplate": "Osmenite Chestplate",
@@ -221,6 +224,7 @@
   "item.cordsenmod.bronze_dagger": "Bronze Dagger",
   "item.cordsenmod.tomato_seed": "Tomato Seed",
   "item.cordsenmod.tomato": "Tomato",
-  "block.cordsenmod.tomato_crop": "Tomato Seed"
+  "block.cordsenmod.tomato_crop": "Tomato Seed",
+  "block.cordsenmod.iron_barrel": "Iron Barrel"
 
 }

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cordsenmod:blocks/example_chest_top",
-    "side": "cordsenmod:blocks/example_chest_side"
-  }
-}

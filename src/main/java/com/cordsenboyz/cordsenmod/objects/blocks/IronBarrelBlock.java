@@ -1,7 +1,7 @@
 package com.cordsenboyz.cordsenmod.objects.blocks;
 
 import com.cordsenboyz.cordsenmod.init.ModTileEntityTypes;
-import com.cordsenboyz.cordsenmod.tileentity.ExampleChestTileEntity;
+import com.cordsenboyz.cordsenmod.tileentity.IronBarrelTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,8 +16,8 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class ExampleChestBlock extends Block {
-    public ExampleChestBlock(Properties properties) {
+public class IronBarrelBlock extends Block {
+    public IronBarrelBlock(Properties properties) {
         super(properties);
     }
 
@@ -28,15 +28,15 @@ public class ExampleChestBlock extends Block {
 
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return ModTileEntityTypes.EXAMPLE_CHEST.get().create();
+        return ModTileEntityTypes.IRON_BARREL.get().create();
     }
 
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult result) {
         if(!worldIn.isRemote){
             TileEntity tile = worldIn.getTileEntity(pos);
-            if(tile instanceof ExampleChestTileEntity);
-            NetworkHooks.openGui((ServerPlayerEntity)player, (ExampleChestTileEntity)tile, pos);
+            if(tile instanceof IronBarrelTileEntity);
+            NetworkHooks.openGui((ServerPlayerEntity)player, (IronBarrelTileEntity)tile, pos);
             return ActionResultType.SUCCESS;
         }  return ActionResultType.FAIL;
     }
@@ -45,8 +45,8 @@ public class ExampleChestBlock extends Block {
     public void onReplaced(BlockState state, World worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
         if(state.getBlock() != newState.getBlock()) {
             TileEntity te = worldIn.getTileEntity(pos);
-            if(te instanceof ExampleChestTileEntity){
-                InventoryHelper.dropItems(worldIn, pos, ((ExampleChestTileEntity) te).getItems());
+            if(te instanceof IronBarrelTileEntity){
+                InventoryHelper.dropItems(worldIn, pos, ((IronBarrelTileEntity) te).getItems());
             }
         }
     }

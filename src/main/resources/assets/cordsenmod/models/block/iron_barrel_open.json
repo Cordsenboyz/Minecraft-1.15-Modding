@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "cordsenmod:blocks/iron_barrel_open",
+    "side": "cordsenmod:blocks/iron_barrel_side",
+    "bottom": "cordsenmod:blocks/iron_barrel_bottom"
+  }
+}

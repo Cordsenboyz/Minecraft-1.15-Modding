@@ -48,8 +48,6 @@ public class ElementalEnchantment extends Enchantment {
         return true;
     }
 
-
-
     @Mod.EventBusSubscriber(modid = CordsenMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class ElementalOnHit {
 
